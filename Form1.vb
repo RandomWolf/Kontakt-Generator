@@ -74,12 +74,12 @@ Public Class Form1
         Nachnamen(32) = ""
         Nachnamen(33) = ""
         Nachnamen(34) = ""
-        Nachnamen(35) = ""
-        Nachnamen(36) = ""
-        Nachnamen(37) = ""
-        Nachnamen(38) = ""
-        Nachnamen(39) = ""
-        Nachnamen(40) = ""
+        Nachnamen(35) = "Poot"
+        Nachnamen(36) = "von Horst"
+        Nachnamen(37) = "van Karma"
+        Nachnamen(38) = "Fey"
+        Nachnamen(39) = "Mayar"
+        Nachnamen(40) = "Teppen"
 
 
 
