@@ -1,4 +1,3 @@
-
 Aach
 Aachen
 Aalen
@@ -8,7 +7,7 @@ Achern
 Achim
 Adelsheim
 Adenau
-Adorf/Vogtl.
+Adorf
 Ahaus
 Ahlen
 Ahrensburg
