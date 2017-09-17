@@ -44,12 +44,23 @@ Public Class Form1
         Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
         Dim VornamenPath As String
         Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
+        Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
 
         'TODO Change to root archive
-        ReDim Nachnamen(File.ReadAllLines(NachnamenPath).Length)
-        ReDim Staedte(File.ReadAllLines(StaedtePath).Length)
-        Staedte = File.ReadAllLines(StaedtePath)
-        Nachnamen = File.ReadAllLines(NachnamenPath)
+
+
+        Staedte = ReadAllLines(StaedtePath)
+        Nachnamen = ReadAllLines(NachnamenPath)
+        Berufe = ReadAllLines(BerufePath)
+
+        ReDim Nachnamen(Nachnamen.Length + 1)
+        ReDim Staedte(Staedte.Length + 1)
+        ReDim Berufe(Berufe.Length + 1)
+
+        Staedte(Staedte.Length) = Staedte(0)
+        'Staedte(Staedte.Length) = Staedte(0)
+        Nachnamen(Nachnamen.Length) = Nachnamen(0)
+        Berufe(Berufe.Length) = Berufe(0)
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
