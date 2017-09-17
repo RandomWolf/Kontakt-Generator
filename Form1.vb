@@ -1,11 +1,15 @@
 ﻿Imports System
 Imports System.IO
+Imports System.IO.File
 Public Class Form1
 
     Dim LabelCheck As Boolean
     Dim CodeAus As String
     Dim Nachnamen(100) As String
     Dim Vornamen(50) As String
+    Dim Staedte(100) As String
+    Dim EMailPvr(100) As String
+    Dim Beruf(100) As String
     Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
         If LabelCheck = False Then
             LabelCheck = True
@@ -27,71 +31,16 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LabelCheck = True
         Me.Width = 319
-
-
         CheckBox9.Checked = False
-            CheckBox1.Checked = True
-            CheckBox2.Checked = True
-            CheckBox3.Checked = True
-            CheckBox4.Checked = True
-            CheckBox5.Checked = True
-            CheckBox6.Checked = True
-            CheckBox7.Checked = True
-            CheckBox8.Checked = True
-
-
-        Nachnamen(1) = "Kackebart"
-        Nachnamen(2) = "Powischer"
-        Nachnamen(3) = "Scheissner"
-        Nachnamen(4) = "Koten"
-        Nachnamen(5) = "Haufen"
-        Nachnamen(6) = "Piss"
-        Nachnamen(7) = "Schwanz"
-        Nachnamen(8) = "Kleinfeld"
-        Nachnamen(9) = "Lübenschanz"
-        Nachnamen(10) = "Schipper"
-        Nachnamen(11) = "Gart"
-        Nachnamen(12) = "Wright"
-        Nachnamen(13) = "Müller"
-        Nachnamen(14) = "Maisner"
-        Nachnamen(15) = "Merkers"
-        Nachnamen(16) = "Meis"
-        Nachnamen(17) = "Wolf"
-        Nachnamen(18) = "Lupina"
-        Nachnamen(19) = "Legohagen"
-        Nachnamen(20) = "Logenhode"
-        Nachnamen(21) = "Rattenfall"
-        Nachnamen(22) = "Deutsche"
-        Nachnamen(23) = "Leggermann"
-        Nachnamen(24) = "Nimmus"
-        Nachnamen(25) = "Obenmann"
-        Nachnamen(26) = "Redowinski"
-        Nachnamen(27) = "Balabert"
-        Nachnamen(28) = "Wolf"
-        Nachnamen(29) = "Fokken"
-        Nachnamen(30) = "Prahm"
-        Nachnamen(31) = "Schuhmacher"
-        Nachnamen(32) = "Dodenhof"
-        Nachnamen(33) = "Oberschuben"
-        Nachnamen(34) = "Kalamoni"
-        Nachnamen(35) = "Rezion"
-        Nachnamen(36) = "Renz"
-        Nachnamen(37) = "Loose"
-        Nachnamen(38) = "Schumbertus-Sonnenberg"
-        Nachnamen(39) = "Hagenbode-Legohinten"
-        Nachnamen(40) = "Jaucher"
-        Nachnamen(41) = "Rüntker"
-        Nachnamen(42) = "Eichenberg"
-        Nachnamen(43) = "Eckenberg"
-        Nachnamen(44) = "Minks"
-        Nachnamen(45) = "Freudentall"
-        Nachnamen(46) = "Riga"
-        Nachnamen(47) = "Kraschmann"
-        Nachnamen(48) = "Darden"
-        Nachnamen(49) = "Lupus"
-        Nachnamen(50) = "Klenkek"
-
-
+        CheckBox1.Checked = True
+        CheckBox2.Checked = True
+        CheckBox3.Checked = True
+        CheckBox4.Checked = True
+        CheckBox5.Checked = True
+        CheckBox6.Checked = True
+        CheckBox7.Checked = True
+        CheckBox8.Checked = True
+        MsgBox(File.ReadAllLines("Nachnamen.txt").Length)
 
     End Sub
 
