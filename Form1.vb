@@ -48,7 +48,7 @@ Public Class Form1
         Nachnamen(6) = "Piss"
         Nachnamen(7) = "Schwanz"
         Nachnamen(8) = "Kleinfeld"
-        Nachnamen(9) = "Watermann"
+        Nachnamen(9) = ""
         Nachnamen(10) = "Schipper"
         Nachnamen(11) = "Gart"
         Nachnamen(12) = "Wright"
