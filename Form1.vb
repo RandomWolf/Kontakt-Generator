@@ -4,7 +4,7 @@ Public Class Form1
 
     Dim LabelCheck As Boolean
     Dim CodeAus As String
-    Dim Nachnamen(50) As String
+    Dim Nachnamen(100) As String
     Dim Vornamen(50) As String
     Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
         If LabelCheck = False Then
@@ -80,6 +80,16 @@ Public Class Form1
         Nachnamen(38) = "Schumbertus-Sonnenberg"
         Nachnamen(39) = "Hagenbode-Legohinten"
         Nachnamen(40) = "Radowinski"
+        Nachnamen(41) = "Radowinski"
+        Nachnamen(42) = "Radowinski"
+        Nachnamen(43) = "Radowinski"
+        Nachnamen(44) = "Radowinski"
+        Nachnamen(45) = "Radowinski"
+        Nachnamen(46) = "Radowinski"
+        Nachnamen(47) = "Radowinski"
+        Nachnamen(48) = "Radowinski"
+        Nachnamen(49) = "Radowinski"
+        Nachnamen(50) = "Radowinski"
 
 
 
