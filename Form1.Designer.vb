@@ -37,18 +37,18 @@ Partial Class Form1
         Me.TxtMail = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TxtBrf = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.ChkNach = New System.Windows.Forms.CheckBox()
+        Me.ChkVor = New System.Windows.Forms.CheckBox()
+        Me.ChkAdr = New System.Windows.Forms.CheckBox()
+        Me.ChkStd = New System.Windows.Forms.CheckBox()
+        Me.ChkTel = New System.Windows.Forms.CheckBox()
+        Me.ChkMail = New System.Windows.Forms.CheckBox()
+        Me.ChkBeruf = New System.Windows.Forms.CheckBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.ChkID = New System.Windows.Forms.CheckBox()
         Me.Label0 = New System.Windows.Forms.Label()
         Me.TxtID = New System.Windows.Forms.TextBox()
         Me.TxtChgID = New System.Windows.Forms.TextBox()
@@ -193,68 +193,68 @@ Partial Class Form1
         Me.TxtBrf.Size = New System.Drawing.Size(100, 20)
         Me.TxtBrf.TabIndex = 15
         '
-        'CheckBox1
+        'ChkNach
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(228, 49)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 17
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ChkNach.AutoSize = True
+        Me.ChkNach.Location = New System.Drawing.Point(228, 49)
+        Me.ChkNach.Name = "ChkNach"
+        Me.ChkNach.Size = New System.Drawing.Size(15, 14)
+        Me.ChkNach.TabIndex = 17
+        Me.ChkNach.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'ChkVor
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(228, 75)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 18
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ChkVor.AutoSize = True
+        Me.ChkVor.Location = New System.Drawing.Point(228, 75)
+        Me.ChkVor.Name = "ChkVor"
+        Me.ChkVor.Size = New System.Drawing.Size(15, 14)
+        Me.ChkVor.TabIndex = 18
+        Me.ChkVor.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'ChkAdr
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(228, 101)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox3.TabIndex = 19
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.ChkAdr.AutoSize = True
+        Me.ChkAdr.Location = New System.Drawing.Point(228, 101)
+        Me.ChkAdr.Name = "ChkAdr"
+        Me.ChkAdr.Size = New System.Drawing.Size(15, 14)
+        Me.ChkAdr.TabIndex = 19
+        Me.ChkAdr.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'ChkStd
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(228, 127)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox4.TabIndex = 20
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.ChkStd.AutoSize = True
+        Me.ChkStd.Location = New System.Drawing.Point(228, 127)
+        Me.ChkStd.Name = "ChkStd"
+        Me.ChkStd.Size = New System.Drawing.Size(15, 14)
+        Me.ChkStd.TabIndex = 20
+        Me.ChkStd.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'ChkTel
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(228, 153)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox5.TabIndex = 21
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.ChkTel.AutoSize = True
+        Me.ChkTel.Location = New System.Drawing.Point(228, 153)
+        Me.ChkTel.Name = "ChkTel"
+        Me.ChkTel.Size = New System.Drawing.Size(15, 14)
+        Me.ChkTel.TabIndex = 21
+        Me.ChkTel.UseVisualStyleBackColor = True
         '
-        'CheckBox6
+        'ChkMail
         '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(228, 178)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox6.TabIndex = 22
-        Me.CheckBox6.UseVisualStyleBackColor = True
+        Me.ChkMail.AutoSize = True
+        Me.ChkMail.Location = New System.Drawing.Point(228, 178)
+        Me.ChkMail.Name = "ChkMail"
+        Me.ChkMail.Size = New System.Drawing.Size(15, 14)
+        Me.ChkMail.TabIndex = 22
+        Me.ChkMail.UseVisualStyleBackColor = True
         '
-        'CheckBox7
+        'ChkBeruf
         '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(228, 204)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox7.TabIndex = 23
-        Me.CheckBox7.UseVisualStyleBackColor = True
+        Me.ChkBeruf.AutoSize = True
+        Me.ChkBeruf.Location = New System.Drawing.Point(228, 204)
+        Me.ChkBeruf.Name = "ChkBeruf"
+        Me.ChkBeruf.Size = New System.Drawing.Size(15, 14)
+        Me.ChkBeruf.TabIndex = 23
+        Me.ChkBeruf.UseVisualStyleBackColor = True
         '
         'TextBox9
         '
@@ -288,14 +288,14 @@ Partial Class Form1
         Me.CheckBox9.Text = "Labels umbenennen"
         Me.CheckBox9.UseVisualStyleBackColor = True
         '
-        'CheckBox8
+        'ChkID
         '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(228, 18)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox8.TabIndex = 40
-        Me.CheckBox8.UseVisualStyleBackColor = True
+        Me.ChkID.AutoSize = True
+        Me.ChkID.Location = New System.Drawing.Point(228, 18)
+        Me.ChkID.Name = "ChkID"
+        Me.ChkID.Size = New System.Drawing.Size(15, 14)
+        Me.ChkID.TabIndex = 40
+        Me.ChkID.UseVisualStyleBackColor = True
         '
         'Label0
         '
@@ -421,20 +421,20 @@ Partial Class Form1
         Me.Controls.Add(Me.TxtChgStd)
         Me.Controls.Add(Me.TxtChgVorname)
         Me.Controls.Add(Me.TxtChgName)
-        Me.Controls.Add(Me.CheckBox8)
+        Me.Controls.Add(Me.ChkID)
         Me.Controls.Add(Me.Label0)
         Me.Controls.Add(Me.TxtID)
         Me.Controls.Add(Me.CheckBox9)
         Me.Controls.Add(Me.TextBox10)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.ChkBeruf)
+        Me.Controls.Add(Me.ChkMail)
+        Me.Controls.Add(Me.ChkTel)
+        Me.Controls.Add(Me.ChkStd)
+        Me.Controls.Add(Me.ChkAdr)
+        Me.Controls.Add(Me.ChkVor)
+        Me.Controls.Add(Me.ChkNach)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TxtBrf)
         Me.Controls.Add(Me.Label5)
@@ -472,18 +472,18 @@ Partial Class Form1
     Friend WithEvents TxtMail As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TxtBrf As TextBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents ChkNach As CheckBox
+    Friend WithEvents ChkVor As CheckBox
+    Friend WithEvents ChkAdr As CheckBox
+    Friend WithEvents ChkStd As CheckBox
+    Friend WithEvents ChkTel As CheckBox
+    Friend WithEvents ChkMail As CheckBox
+    Friend WithEvents ChkBeruf As CheckBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents TextBox10 As TextBox
     Friend WithEvents CheckBox9 As CheckBox
-    Friend WithEvents CheckBox8 As CheckBox
+    Friend WithEvents ChkID As CheckBox
     Friend WithEvents Label0 As Label
     Friend WithEvents TxtID As TextBox
     Friend WithEvents TxtChgID As TextBox

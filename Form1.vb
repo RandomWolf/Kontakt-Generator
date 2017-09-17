@@ -33,23 +33,23 @@ Public Class Form1
         LabelCheck = True
         Me.Width = 319
             CheckBox9.Checked = False
-            CheckBox1.Checked = True
-            CheckBox2.Checked = True
-            CheckBox3.Checked = True
-            CheckBox4.Checked = True
-            CheckBox5.Checked = True
-            CheckBox6.Checked = True
-            CheckBox7.Checked = True
-            CheckBox8.Checked = True
-    Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
-    Dim VornamenPath As String
-    Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
-    
-    'TODO Change to root archive
-       ReDim Nachnamen(File.ReadAllLines(NachnamenPath).Length)
-       ReDim Staedte(File.ReadAllLines(StaedtePath).Length)
+        ChkNach.Checked = True
+        ChkVor.Checked = True
+        ChkAdr.Checked = True
+        ChkStd.Checked = True
+        ChkTel.Checked = True
+        ChkMail.Checked = True
+        ChkBeruf.Checked = True
+        ChkID.Checked = True
+        Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
+        Dim VornamenPath As String
+        Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
+
+        'TODO Change to root archive
+        ReDim Nachnamen(File.ReadAllLines(NachnamenPath).Length)
+        ReDim Staedte(File.ReadAllLines(StaedtePath).Length)
         Staedte = File.ReadAllLines(StaedtePath)
-        Nachnamen = File.ReadALlLines(NachnamenPath)
+        Nachnamen = File.ReadAllLines(NachnamenPath)
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
@@ -63,36 +63,67 @@ Public Class Form1
         Label7.Text = TxtChgBeruf.Text
     End Sub
 
-    Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
-
+    Private Sub ChkID_CheckedChanged(sender As Object, e As EventArgs) Handles ChkID.CheckedChanged
+        If ChkID.Checked = False Then
+            TxtID.Visible = False
+        Else
+            TxtID.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox8_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox8.CheckedChanged
-
+    Private Sub ChkBeruf_CheckedChanged(sender As Object, e As EventArgs) Handles ChkBeruf.CheckedChanged
+        If ChkBeruf.Checked = False Then
+            TxtBrf.Visible = False
+        Else
+            TxtBrf.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
-
+    Private Sub ChkMail_CheckedChanged(sender As Object, e As EventArgs) Handles ChkMail.CheckedChanged
+        If ChkMail.Checked = False Then
+            TxtMail.Visible = False
+        Else
+            TxtMail.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged
-
+    Private Sub ChkTel_CheckedChanged(sender As Object, e As EventArgs) Handles ChkTel.CheckedChanged
+        If ChkTel.Checked = False Then
+            TxtTel.Visible = False
+        Else
+            TxtTel.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
-
+    Private Sub ChkStd_CheckedChanged(sender As Object, e As EventArgs) Handles ChkStd.CheckedChanged
+        If ChkStd.Checked = False Then
+            TxtStd.Visible = False
+        Else
+            TxtStd.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
-
+    Private Sub ChkAdr_CheckedChanged(sender As Object, e As EventArgs) Handles ChkAdr.CheckedChanged
+        If ChkAdr.Checked = False Then
+            TxtAdr.Visible = False
+        Else
+            TxtAdr.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
-
+    Private Sub ChkVor_CheckedChanged(sender As Object, e As EventArgs) Handles ChkVor.CheckedChanged
+        If ChkVor.Checked = False Then
+            TxtVName.Visible = False
+        Else
+            TxtVName.Visible = True
+        End If
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-    
+    Private Sub ChkNach_CheckedChanged(sender As Object, e As EventArgs) Handles ChkNach.CheckedChanged
+        If ChkNach.Checked = False Then
+            TxtName.Visible = False
+        Else
+            TxtName.Visible = True
+        End If
     End Sub
-
 End Class
