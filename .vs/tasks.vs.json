@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Form1",
+      "appliesTo": "Form1.vb",
+      "type": "launch"
+    }
+  ]
+}

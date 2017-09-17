@@ -1,15 +1,16 @@
 ﻿Imports System
-Imports System.IO
 Imports System.IO.File
+Imports System.IO
 Public Class Form1
 
     Dim LabelCheck As Boolean
     Dim CodeAus As String
-    Dim Nachnamen(100) As String
+    Dim Nachnamen(50) As String
     Dim Vornamen(50) As String
-    Dim Staedte(100) As String
-    Dim EMailPvr(100) As String
-    Dim Beruf(100) As String
+    Dim Staedte(50) As String
+    Dim Berufe(50) As String
+    Dim EMailPvr(50) As String
+    
     Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
         If LabelCheck = False Then
             LabelCheck = True
@@ -31,17 +32,24 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LabelCheck = True
         Me.Width = 319
-        CheckBox9.Checked = False
-        CheckBox1.Checked = True
-        CheckBox2.Checked = True
-        CheckBox3.Checked = True
-        CheckBox4.Checked = True
-        CheckBox5.Checked = True
-        CheckBox6.Checked = True
-        CheckBox7.Checked = True
-        CheckBox8.Checked = True
-        MsgBox(File.ReadAllLines("Nachnamen.txt").Length)
-
+            CheckBox9.Checked = False
+            CheckBox1.Checked = True
+            CheckBox2.Checked = True
+            CheckBox3.Checked = True
+            CheckBox4.Checked = True
+            CheckBox5.Checked = True
+            CheckBox6.Checked = True
+            CheckBox7.Checked = True
+            CheckBox8.Checked = True
+    Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
+    Dim VornamenPath As String
+    Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
+    
+    'TODO Change to root archive
+       ReDim Nachnamen(File.ReadAllLines(NachnamenPath).Length)
+       ReDim Staedte(File.ReadAllLines(StaedtePath).Length)
+        Staedte = File.ReadAllLines(StaedtePath)
+        Nachnamen = File.ReadALlLines(NachnamenPath)
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
