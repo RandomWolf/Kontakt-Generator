@@ -1,0 +1,15 @@
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.exe.config
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.exe.manifest
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.application
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.exe
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.pdb
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Release\KontaktRandomizer.xml
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.Form1.resources
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.Resources.resources
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.vbproj.GenerateResource.Cache
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.vbproj.CoreCompileInputs.cache
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.exe.manifest
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.application
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.exe
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.xml
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Release\KontaktRandomizer.pdb

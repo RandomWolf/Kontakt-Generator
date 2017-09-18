@@ -42,11 +42,11 @@ Public Class Form1
         ChkMail.Checked = True
         ChkBeruf.Checked = True
         ChkID.Checked = True
-        Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
-        Dim VornamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Vornamen.txt"
-        Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
-        Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
-        Dim EMailPvrPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\EMailPrv.txt"
+        Dim NachnamenPath As String = "Nachnamen.txt"
+        Dim VornamenPath As String = "Vornamen.txt"
+        Dim StaedtePath As String = "Staedte.txt"
+        Dim BerufePath As String = "Berufe.txt"
+        Dim EMailPvrPath As String = "EMailPrv.txt"
 
 
         Dim NachnamenTemp(50) As String

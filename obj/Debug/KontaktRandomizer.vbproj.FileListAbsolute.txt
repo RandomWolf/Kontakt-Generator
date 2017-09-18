@@ -33,4 +33,9 @@ C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.vbp
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.exe
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.xml
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.pdb
-C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.vbprojResolveAssemblyReference.cache
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Debug\KontaktRandomizer.exe.manifest
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Debug\KontaktRandomizer.application
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.exe.manifest
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.application
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Debug\KontaktRandomizer.exe.CodeAnalysisLog.xml
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\bin\Debug\KontaktRandomizer.exe.lastcodeanalysissucceeded
