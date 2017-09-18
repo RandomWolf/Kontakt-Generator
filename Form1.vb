@@ -14,10 +14,10 @@ Public Class Form1
     Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
         If LabelCheck = False Then
             LabelCheck = True
-            Me.Width = 319
+            Me.Width = 424
         Else
             LabelCheck = False
-            Me.Width = 485
+            Me.Width = 656
             TxtChgID.Text = Label0.Text
             TxtChgName.Text = Label1.Text
             TxtChgVorname.Text = Label2.Text
@@ -182,6 +182,7 @@ Public Class Form1
             Return ZWertS(MaxNr)
         Else
             Return value
+            Debug.Print(value)
         End If
     End Function
 
@@ -194,18 +195,22 @@ Public Class Form1
         Dim GenTel As String
         Dim GenBeruf As String
 
-        GenVorname = Vornamen(ZWertS(Vornamen.Length))
-        GenNachname = Nachnamen(ZWertS(Nachnamen.Length))
-        GenStadt = Staedte(ZWertS(Staedte.Length))
-        GenEMail = GenVorname & GenNachname & "@" & EMailPvr(ZWertS(EMailPvr.Length))
+        GenVorname = Vornamen(ZWertS(Vornamen.Length - 1))
+        GenNachname = Nachnamen(ZWertS(Nachnamen.Length - 1))
+        GenStadt = Staedte(ZWertS(Staedte.Length - 1))
+        GenEMail = GenVorname & GenNachname & "@" & EMailPvr(ZWertS(EMailPvr.Length - 1))
         GenTel = "0"
         For i = 1 To 10
             GenTel = GenTel & ZWertS(9)
         Next
-        GenBeruf = Berufe(ZWertS(Berufe.Length))
+        GenBeruf = Berufe(ZWertS(Berufe.Length - 1))
 
-
-
+        TxtName.Text = GenNachname
+        TxtVName.Text = GenVorname
+        TxtStd.Text = GenStadt
+        TxtMail.Text = GenEMail
+        TxtBrf.Text = GenBeruf
+        TxtTel.Text = GenTel
 
 
 

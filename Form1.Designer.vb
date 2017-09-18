@@ -69,7 +69,7 @@ Partial Class Form1
         '
         Me.Button1.Location = New System.Drawing.Point(37, 506)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(229, 23)
+        Me.Button1.Size = New System.Drawing.Size(329, 23)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Kontakt generieren"
         Me.Button1.UseVisualStyleBackColor = True
@@ -79,7 +79,7 @@ Partial Class Form1
         Me.TxtName.Location = New System.Drawing.Point(122, 46)
         Me.TxtName.Name = "TxtName"
         Me.TxtName.ReadOnly = True
-        Me.TxtName.Size = New System.Drawing.Size(100, 20)
+        Me.TxtName.Size = New System.Drawing.Size(244, 20)
         Me.TxtName.TabIndex = 1
         '
         'Label1
@@ -105,7 +105,7 @@ Partial Class Form1
         Me.TxtVName.Location = New System.Drawing.Point(122, 72)
         Me.TxtVName.Name = "TxtVName"
         Me.TxtVName.ReadOnly = True
-        Me.TxtVName.Size = New System.Drawing.Size(100, 20)
+        Me.TxtVName.Size = New System.Drawing.Size(244, 20)
         Me.TxtVName.TabIndex = 3
         '
         'Label3
@@ -122,7 +122,7 @@ Partial Class Form1
         Me.TxtAdr.Location = New System.Drawing.Point(122, 98)
         Me.TxtAdr.Name = "TxtAdr"
         Me.TxtAdr.ReadOnly = True
-        Me.TxtAdr.Size = New System.Drawing.Size(100, 20)
+        Me.TxtAdr.Size = New System.Drawing.Size(244, 20)
         Me.TxtAdr.TabIndex = 7
         '
         'Label4
@@ -139,7 +139,7 @@ Partial Class Form1
         Me.TxtStd.Location = New System.Drawing.Point(122, 124)
         Me.TxtStd.Name = "TxtStd"
         Me.TxtStd.ReadOnly = True
-        Me.TxtStd.Size = New System.Drawing.Size(100, 20)
+        Me.TxtStd.Size = New System.Drawing.Size(244, 20)
         Me.TxtStd.TabIndex = 5
         '
         'Label5
@@ -156,7 +156,7 @@ Partial Class Form1
         Me.TxtTel.Location = New System.Drawing.Point(122, 150)
         Me.TxtTel.Name = "TxtTel"
         Me.TxtTel.ReadOnly = True
-        Me.TxtTel.Size = New System.Drawing.Size(100, 20)
+        Me.TxtTel.Size = New System.Drawing.Size(244, 20)
         Me.TxtTel.TabIndex = 11
         '
         'Label6
@@ -173,7 +173,7 @@ Partial Class Form1
         Me.TxtMail.Location = New System.Drawing.Point(122, 176)
         Me.TxtMail.Name = "TxtMail"
         Me.TxtMail.ReadOnly = True
-        Me.TxtMail.Size = New System.Drawing.Size(100, 20)
+        Me.TxtMail.Size = New System.Drawing.Size(244, 20)
         Me.TxtMail.TabIndex = 9
         '
         'Label7
@@ -190,13 +190,13 @@ Partial Class Form1
         Me.TxtBrf.Location = New System.Drawing.Point(122, 202)
         Me.TxtBrf.Name = "TxtBrf"
         Me.TxtBrf.ReadOnly = True
-        Me.TxtBrf.Size = New System.Drawing.Size(100, 20)
+        Me.TxtBrf.Size = New System.Drawing.Size(244, 20)
         Me.TxtBrf.TabIndex = 15
         '
         'ChkNach
         '
         Me.ChkNach.AutoSize = True
-        Me.ChkNach.Location = New System.Drawing.Point(228, 49)
+        Me.ChkNach.Location = New System.Drawing.Point(384, 52)
         Me.ChkNach.Name = "ChkNach"
         Me.ChkNach.Size = New System.Drawing.Size(15, 14)
         Me.ChkNach.TabIndex = 17
@@ -205,7 +205,7 @@ Partial Class Form1
         'ChkVor
         '
         Me.ChkVor.AutoSize = True
-        Me.ChkVor.Location = New System.Drawing.Point(228, 75)
+        Me.ChkVor.Location = New System.Drawing.Point(384, 78)
         Me.ChkVor.Name = "ChkVor"
         Me.ChkVor.Size = New System.Drawing.Size(15, 14)
         Me.ChkVor.TabIndex = 18
@@ -214,7 +214,7 @@ Partial Class Form1
         'ChkAdr
         '
         Me.ChkAdr.AutoSize = True
-        Me.ChkAdr.Location = New System.Drawing.Point(228, 101)
+        Me.ChkAdr.Location = New System.Drawing.Point(384, 104)
         Me.ChkAdr.Name = "ChkAdr"
         Me.ChkAdr.Size = New System.Drawing.Size(15, 14)
         Me.ChkAdr.TabIndex = 19
@@ -223,7 +223,7 @@ Partial Class Form1
         'ChkStd
         '
         Me.ChkStd.AutoSize = True
-        Me.ChkStd.Location = New System.Drawing.Point(228, 127)
+        Me.ChkStd.Location = New System.Drawing.Point(384, 130)
         Me.ChkStd.Name = "ChkStd"
         Me.ChkStd.Size = New System.Drawing.Size(15, 14)
         Me.ChkStd.TabIndex = 20
@@ -232,7 +232,7 @@ Partial Class Form1
         'ChkTel
         '
         Me.ChkTel.AutoSize = True
-        Me.ChkTel.Location = New System.Drawing.Point(228, 153)
+        Me.ChkTel.Location = New System.Drawing.Point(384, 156)
         Me.ChkTel.Name = "ChkTel"
         Me.ChkTel.Size = New System.Drawing.Size(15, 14)
         Me.ChkTel.TabIndex = 21
@@ -241,7 +241,7 @@ Partial Class Form1
         'ChkMail
         '
         Me.ChkMail.AutoSize = True
-        Me.ChkMail.Location = New System.Drawing.Point(228, 178)
+        Me.ChkMail.Location = New System.Drawing.Point(384, 181)
         Me.ChkMail.Name = "ChkMail"
         Me.ChkMail.Size = New System.Drawing.Size(15, 14)
         Me.ChkMail.TabIndex = 22
@@ -250,7 +250,7 @@ Partial Class Form1
         'ChkBeruf
         '
         Me.ChkBeruf.AutoSize = True
-        Me.ChkBeruf.Location = New System.Drawing.Point(228, 204)
+        Me.ChkBeruf.Location = New System.Drawing.Point(384, 207)
         Me.ChkBeruf.Name = "ChkBeruf"
         Me.ChkBeruf.Size = New System.Drawing.Size(15, 14)
         Me.ChkBeruf.TabIndex = 23
@@ -261,21 +261,21 @@ Partial Class Form1
         Me.TextBox9.Location = New System.Drawing.Point(37, 349)
         Me.TextBox9.Multiline = True
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(229, 115)
+        Me.TextBox9.Size = New System.Drawing.Size(329, 115)
         Me.TextBox9.TabIndex = 25
         '
         'ProgressBar1
         '
         Me.ProgressBar1.Location = New System.Drawing.Point(38, 470)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(228, 30)
+        Me.ProgressBar1.Size = New System.Drawing.Size(328, 30)
         Me.ProgressBar1.TabIndex = 26
         '
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(37, 274)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(229, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(329, 20)
         Me.TextBox10.TabIndex = 27
         '
         'CheckBox9
@@ -291,7 +291,7 @@ Partial Class Form1
         'ChkID
         '
         Me.ChkID.AutoSize = True
-        Me.ChkID.Location = New System.Drawing.Point(228, 18)
+        Me.ChkID.Location = New System.Drawing.Point(384, 21)
         Me.ChkID.Name = "ChkID"
         Me.ChkID.Size = New System.Drawing.Size(15, 14)
         Me.ChkID.TabIndex = 40
@@ -311,68 +311,68 @@ Partial Class Form1
         Me.TxtID.Location = New System.Drawing.Point(122, 15)
         Me.TxtID.Name = "TxtID"
         Me.TxtID.ReadOnly = True
-        Me.TxtID.Size = New System.Drawing.Size(100, 20)
+        Me.TxtID.Size = New System.Drawing.Size(244, 20)
         Me.TxtID.TabIndex = 38
         '
         'TxtChgID
         '
-        Me.TxtChgID.Location = New System.Drawing.Point(320, 15)
+        Me.TxtChgID.Location = New System.Drawing.Point(417, 15)
         Me.TxtChgID.Name = "TxtChgID"
         Me.TxtChgID.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgID.TabIndex = 48
         '
         'TxtChgBeruf
         '
-        Me.TxtChgBeruf.Location = New System.Drawing.Point(320, 202)
+        Me.TxtChgBeruf.Location = New System.Drawing.Point(417, 202)
         Me.TxtChgBeruf.Name = "TxtChgBeruf"
         Me.TxtChgBeruf.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgBeruf.TabIndex = 47
         '
         'TxtChgTel
         '
-        Me.TxtChgTel.Location = New System.Drawing.Point(320, 150)
+        Me.TxtChgTel.Location = New System.Drawing.Point(417, 150)
         Me.TxtChgTel.Name = "TxtChgTel"
         Me.TxtChgTel.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgTel.TabIndex = 46
         '
         'TxtChgMail
         '
-        Me.TxtChgMail.Location = New System.Drawing.Point(320, 176)
+        Me.TxtChgMail.Location = New System.Drawing.Point(417, 176)
         Me.TxtChgMail.Name = "TxtChgMail"
         Me.TxtChgMail.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgMail.TabIndex = 45
         '
         'TxtChgAdr
         '
-        Me.TxtChgAdr.Location = New System.Drawing.Point(320, 98)
+        Me.TxtChgAdr.Location = New System.Drawing.Point(417, 98)
         Me.TxtChgAdr.Name = "TxtChgAdr"
         Me.TxtChgAdr.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgAdr.TabIndex = 44
         '
         'TxtChgStd
         '
-        Me.TxtChgStd.Location = New System.Drawing.Point(320, 124)
+        Me.TxtChgStd.Location = New System.Drawing.Point(417, 124)
         Me.TxtChgStd.Name = "TxtChgStd"
         Me.TxtChgStd.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgStd.TabIndex = 43
         '
         'TxtChgVorname
         '
-        Me.TxtChgVorname.Location = New System.Drawing.Point(320, 72)
+        Me.TxtChgVorname.Location = New System.Drawing.Point(417, 72)
         Me.TxtChgVorname.Name = "TxtChgVorname"
         Me.TxtChgVorname.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgVorname.TabIndex = 42
         '
         'TxtChgName
         '
-        Me.TxtChgName.Location = New System.Drawing.Point(320, 46)
+        Me.TxtChgName.Location = New System.Drawing.Point(417, 46)
         Me.TxtChgName.Name = "TxtChgName"
         Me.TxtChgName.Size = New System.Drawing.Size(100, 20)
         Me.TxtChgName.TabIndex = 41
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(320, 248)
+        Me.Button2.Location = New System.Drawing.Point(417, 248)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(99, 22)
         Me.Button2.TabIndex = 49
@@ -383,7 +383,7 @@ Partial Class Form1
         '
         Me.TextBox1.Location = New System.Drawing.Point(37, 323)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(229, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(329, 20)
         Me.TextBox1.TabIndex = 50
         '
         'Label8
@@ -408,7 +408,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(469, 569)
+        Me.ClientSize = New System.Drawing.Size(566, 569)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.TextBox1)
