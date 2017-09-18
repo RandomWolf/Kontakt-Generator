@@ -45,11 +45,13 @@ Public Class Form1
         Dim VornamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Vornamen.txt"
         Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
         Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
+        Dim EMailPvrPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\EMailPvr.txt"
 
         Dim NachnamenTemp(50) As String
         Dim VornamenTemp(50) As String
         Dim StaedteTemp(50) As String
         Dim BerufeTemp(50) As String
+        Dim EMailPvrTemp(50) As String
 
         'TODO Change to root archive
 
@@ -57,12 +59,14 @@ Public Class Form1
         ReDim Vornamen(ReadAllLines(VornamenPath).Length + 1)
         ReDim Staedte(ReadAllLines(StaedtePath).Length + 1)
         ReDim Berufe(ReadAllLines(BerufePath).Length + 1)
+        ReDim EMailPvr(ReadAllLines(EMailPvrPath).Length + 1)
+
 
         NachnamenTemp = ReadAllLines(NachnamenPath)
         VornamenTemp = ReadAllLines(VornamenPath)
         StaedteTemp = ReadAllLines(StaedtePath)
         BerufeTemp = ReadAllLines(BerufePath)
-
+        EMailPvrTemp = ReadAllLines(EMailPvrPath)
 
         Dim i As Integer
         For i = 1 To NachnamenTemp.Length
@@ -81,6 +85,10 @@ Public Class Form1
             Berufe(i) = BerufeTemp(i - 1)
         Next
         BerufeTemp = Nothing
+        For i = 1 To EMailPvrTemp.Length
+            EMailPvr(i) = EMailPvrTemp(i - 1)
+        Next
+        EMailPvrTemp = Nothing
 
 
 
