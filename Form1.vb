@@ -10,7 +10,8 @@ Public Class Form1
     Dim Staedte(50) As String
     Dim Berufe(50) As String
     Dim EMailPvr(50) As String
-    
+    Dim Vorwahlen(50) As String
+
     Private Sub CheckBox9_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox9.CheckedChanged
         If LabelCheck = False Then
             LabelCheck = True
@@ -31,8 +32,8 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LabelCheck = True
-        Me.Width = 319
-            CheckBox9.Checked = False
+        Me.Width = 424
+        CheckBox9.Checked = False
         ChkNach.Checked = True
         ChkVor.Checked = True
         ChkAdr.Checked = True
@@ -47,11 +48,13 @@ Public Class Form1
         Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
         Dim EMailPvrPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\EMailPrv.txt"
 
+
         Dim NachnamenTemp(50) As String
         Dim VornamenTemp(50) As String
         Dim StaedteTemp(50) As String
         Dim BerufeTemp(50) As String
         Dim EMailPvrTemp(50) As String
+
 
         'TODO Change to root archive
 
@@ -62,11 +65,13 @@ Public Class Form1
         ReDim EMailPvr(ReadAllLines(EMailPvrPath).Length + 1)
 
 
+
         NachnamenTemp = ReadAllLines(NachnamenPath)
         VornamenTemp = ReadAllLines(VornamenPath)
         StaedteTemp = ReadAllLines(StaedtePath)
         BerufeTemp = ReadAllLines(BerufePath)
         EMailPvrTemp = ReadAllLines(EMailPvrPath)
+
 
         Dim i As Integer
         For i = 1 To NachnamenTemp.Length
@@ -89,6 +94,7 @@ Public Class Form1
             EMailPvr(i) = EMailPvrTemp(i - 1)
         Next
         EMailPvrTemp = Nothing
+
 
 
 
@@ -199,8 +205,9 @@ Public Class Form1
         GenNachname = Nachnamen(ZWertS(Nachnamen.Length - 1))
         GenStadt = Staedte(ZWertS(Staedte.Length - 1))
         GenEMail = GenVorname & GenNachname & "@" & EMailPvr(ZWertS(EMailPvr.Length - 1))
-        GenTel = "0"
-        For i = 1 To 10
+        GenTel = "04"
+        GenTel = GenTel & ZWertS(977)
+        For i = 1 To 6
             GenTel = GenTel & ZWertS(9)
         Next
         GenBeruf = Berufe(ZWertS(Berufe.Length - 1))
