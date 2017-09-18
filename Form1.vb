@@ -45,7 +45,7 @@ Public Class Form1
         Dim VornamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Vornamen.txt"
         Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
         Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
-        Dim EMailPvrPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\EMailPvr.txt"
+        Dim EMailPvrPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\EMailPrv.txt"
 
         Dim NachnamenTemp(50) As String
         Dim VornamenTemp(50) As String
@@ -171,5 +171,44 @@ Public Class Form1
         Else
             TxtName.Visible = True
         End If
+
+    End Sub
+
+    Public Function ZWertS(MaxNr As Integer)
+        Randomize()
+        Dim value As Integer
+        value = CInt(Math.Floor((MaxNr * 1 + 1) * Rnd()))
+        If value = 0 Then
+            Return ZWertS(MaxNr)
+        Else
+            Return value
+        End If
+    End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim GenVorname As String
+        Dim GenNachname As String
+        Dim GenAdresse As String
+        Dim GenStadt As String
+        Dim GenEMail As String
+        Dim GenTel As String
+        Dim GenBeruf As String
+
+        GenVorname = Vornamen(ZWertS(Vornamen.Length))
+        GenNachname = Nachnamen(ZWertS(Nachnamen.Length))
+        GenStadt = Staedte(ZWertS(Staedte.Length))
+        GenEMail = GenVorname & GenNachname & "@" & EMailPvr(ZWertS(EMailPvr.Length))
+        GenTel = "0"
+        For i = 1 To 10
+            GenTel = GenTel & ZWertS(9)
+        Next
+        GenBeruf = Berufe(ZWertS(Berufe.Length))
+
+
+
+
+
+
+
     End Sub
 End Class
