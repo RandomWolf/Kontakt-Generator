@@ -33,3 +33,4 @@ C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.vbp
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.exe
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.xml
 C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.pdb
+C:\Users\Nico\Documents\GitHub\Kontakt-Generator\obj\Debug\KontaktRandomizer.vbprojResolveAssemblyReference.cache

@@ -42,25 +42,52 @@ Public Class Form1
         ChkBeruf.Checked = True
         ChkID.Checked = True
         Dim NachnamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Nachnamen.txt"
-        Dim VornamenPath As String
+        Dim VornamenPath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Vornamen.txt"
         Dim StaedtePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Staedte.txt"
         Dim BerufePath As String = "C:\Users\Nico\Documents\GitHub\Kontakt-Generator\Berufe.txt"
 
+        Dim NachnamenTemp(50) As String
+        Dim VornamenTemp(50) As String
+        Dim StaedteTemp(50) As String
+        Dim BerufeTemp(50) As String
+
         'TODO Change to root archive
 
+        ReDim Nachnamen(ReadAllLines(NachnamenPath).Length + 1)
+        ReDim Vornamen(ReadAllLines(VornamenPath).Length + 1)
+        ReDim Staedte(ReadAllLines(StaedtePath).Length + 1)
+        ReDim Berufe(ReadAllLines(BerufePath).Length + 1)
 
-        Staedte = ReadAllLines(StaedtePath)
-        Nachnamen = ReadAllLines(NachnamenPath)
-        Berufe = ReadAllLines(BerufePath)
+        NachnamenTemp = ReadAllLines(NachnamenPath)
+        VornamenTemp = ReadAllLines(VornamenPath)
+        StaedteTemp = ReadAllLines(StaedtePath)
+        BerufeTemp = ReadAllLines(BerufePath)
 
-        ReDim Nachnamen(Nachnamen.Length + 1)
-        ReDim Staedte(Staedte.Length + 1)
-        ReDim Berufe(Berufe.Length + 1)
 
-        Staedte(Staedte.Length) = Staedte(0)
+        Dim i As Integer
+        For i = 1 To NachnamenTemp.Length
+            Nachnamen(i) = NachnamenTemp(i - 1)
+        Next
+        NachnamenTemp = Nothing
+        For i = 1 To VornamenTemp.Length
+            Vornamen(i) = VornamenTemp(i - 1)
+        Next
+        VornamenTemp = Nothing
+        For i = 1 To StaedteTemp.Length
+            Staedte(i) = StaedteTemp(i - 1)
+        Next
+        StaedteTemp = Nothing
+        For i = 1 To BerufeTemp.Length
+            Berufe(i) = BerufeTemp(i - 1)
+        Next
+        BerufeTemp = Nothing
+
+
+
+        'Staedte(Staedte.Length - 1) = Staedte(0)
         'Staedte(Staedte.Length) = Staedte(0)
-        Nachnamen(Nachnamen.Length) = Nachnamen(0)
-        Berufe(Berufe.Length) = Berufe(0)
+        'Nachnamen(Nachnamen.Length - 1) = Nachnamen(0)
+        'Berufe(Berufe.Length - 1) = Berufe(0)
     End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
