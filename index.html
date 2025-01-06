@@ -2,7 +2,19 @@
 <htmL>
   <head>
     <title>FISCH!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      @keyframes bewegungsSchwimmen {
+        from {transform: rotate(-40deg);}
+        to {transform: rotate(40deg);}
+      }
+      
+      * {
+        box-sizing: border-box;
+        margin: 0em;
+        padding: 0em;
+      }
+      
       html, body {
         height: 100%;
       }
@@ -22,6 +34,8 @@
 
       #fisch {
         font-size: 10rem;
+        animation-name: bewegungsSchwimmen;
+        animation-duration: 4s;
       }
     </style>
   </head>
