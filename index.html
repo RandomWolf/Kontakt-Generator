@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       @keyframes bewegungsSchwimmen {
-        from {transform: rotate(-40deg);}
-        to {transform: rotate(40deg);}
+        from {transform: rotate(-18deg);}
+        to {transform: rotate(18deg);}
       }
       
       * {
@@ -34,8 +34,7 @@
 
       #fisch {
         font-size: 10rem;
-        animation-name: bewegungsSchwimmen;
-        animation-duration: 4s;
+        animation: bewegungsSchwimmen 4s ease-in-out 0s infinite alternate;
       }
     </style>
   </head>
